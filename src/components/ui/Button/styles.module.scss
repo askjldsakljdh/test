@@ -1,0 +1,27 @@
+.button {
+  color: var(--foreground);
+  font-family: 'Nunito', sans-serif;
+  background-color: var(--secondary-color);
+  
+  font-size: 1.1rem;
+  font-weight: 700;
+
+  padding: 9px 21px;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  &.lime {
+    background-color: #95F619 !important;
+    color: #0F1012 !important;
+  
+    &:hover {
+      background-color: #a6ff33 !important;
+    }
+  }
+}

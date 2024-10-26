@@ -1,0 +1,86 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 17px 0;
+}
+
+.loginLink {
+  color: #95F619;
+  margin-left: 5px;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.tabButton {
+  flex: 1 1 auto;
+  background-color: #272A30 !important;
+  font-size: 16px !important;
+
+  &[aria-pressed='true'] {
+    transition: all 0.2s ease;
+    background: linear-gradient(265deg, #143CC9, #B433E1) !important;
+  }
+
+  & > svg {
+    fill: #fff;
+  }
+}
+
+.button {
+  background-color: #95F619 !important;
+  color: #0F1012 !important;
+
+  &:hover {
+    background-color: #a6ff33 !important;
+  }
+}
+
+.socialsLogin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  & > svg {
+    cursor: pointer;
+  }
+}
+
+.centerText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.otherWaysToLogin {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.socialsLogin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}

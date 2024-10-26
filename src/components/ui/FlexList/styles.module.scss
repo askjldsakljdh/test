@@ -1,0 +1,27 @@
+.flexList {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  flex-wrap: nowrap;
+  overflow-x: auto;
+
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  
+  &::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+}
+
+.flexListWrap {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 480px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

@@ -1,0 +1,30 @@
+.mobileMenu {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 70px;
+  background-color: var(--primary-color);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+
+  @media screen and (min-width: 1023px) {
+    display: none;
+  }
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+
+  p {
+    font-size: 0.8rem;
+    font-weight: 800;
+  }
+}

@@ -1,0 +1,38 @@
+.bannerSection {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  margin-bottom: 60px;
+  gap: 25px;
+
+  @media screen and (max-width: 960px) {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
+
+.banner {
+  background: linear-gradient(135deg, #FF521C, #FFA800);
+  padding: 30px;
+  border-radius: 22px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #FFC700;
+  }
+}

@@ -1,0 +1,47 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: none;
+
+  @media screen and (max-width: 960px) {
+    display: block;
+  }
+}
+
+.headerButtons {
+  display: flex;
+  gap: 10px;
+}
+
+.menuButtons {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.loginButton {
+  background: linear-gradient(265deg, #B433E1, #ff922d, #B433E1);
+  background-size: 300% auto;
+  transition: .4s;
+  &:hover {
+    background-position: 30% 0;
+  }
+}
+
+.registrationButton {
+  background: linear-gradient(135deg, #2212d1, #B433E1, #2212d1);
+  background-size: 300% auto;
+  transition: .4s;
+  &:hover {
+    background-position: 30% 0;
+  }
+}
+
+.languageDropdown {
+  @media screen and (max-width: 960px) {
+    display: none !important;
+  }
+}
